@@ -26,15 +26,15 @@ const GradesSection = () => {
   /* eslint-disable */
   const handleInputChange =
     (inputSetter: React.Dispatch<SetStateAction<number>>) =>
-      (event: React.ChangeEvent<HTMLInputElement>): void => {
-        const val = parseInt(event.target.value, 10);
-        if (isNaN(val) || val < 0) {
-          inputSetter(0);
-        } else {
-          inputSetter(val);
-        }
-      };
-    /* eslint-enable */
+    (event: React.ChangeEvent<HTMLInputElement>): void => {
+      const val = parseInt(event.target.value, 10);
+      if (isNaN(val) || val < 0) {
+        inputSetter(0);
+      } else {
+        inputSetter(val);
+      }
+    };
+  /* eslint-enable */
   const secondRow = () => {
     return (
       <div className="border-b-2 border-b-secondary-20">

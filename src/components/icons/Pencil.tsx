@@ -1,5 +1,8 @@
-import * as React from "react"
-const SvgComponent = (props) => (
+import * as React from "react";
+
+type SvgComponentProps = React.SVGProps<SVGSVGElement>;
+
+const SvgComponent: React.FC<SvgComponentProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={13}
@@ -14,5 +17,6 @@ const SvgComponent = (props) => (
       clipRule="evenodd"
     />
   </svg>
-)
-export default SvgComponent
+);
+
+export default SvgComponent;

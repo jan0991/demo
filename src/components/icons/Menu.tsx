@@ -1,4 +1,5 @@
-const SvgComponent = (props) => (
+type SvgComponentProps = React.SVGProps<SVGSVGElement>;
+const SvgComponent: React.FC<SvgComponentProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={20}
@@ -13,6 +14,5 @@ const SvgComponent = (props) => (
       clipRule="evenodd"
     />
   </svg>
-)
+);
 export default SvgComponent;
-  
