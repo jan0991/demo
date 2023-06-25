@@ -8,6 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        "body-01": [
+          "24px",
+          {
+            lineHeight: "32px",
+            weight: 400,
+          },
+        ],
         "03": [
           "12px",
           {
@@ -75,9 +82,6 @@ module.exports = {
       maxWidth: {
         container: "1440px",
       },
-      width: {
-        container: "1440px",
-      },
       colors: {
         "dark-10": "#052B52",
         "dark-20": "#42576D",
@@ -88,6 +92,7 @@ module.exports = {
         "yellow-10": "#FFD601",
         "tertiary-a-10": "#66BB6A",
         "tertiary-e-10": "#FF9100",
+        "blue-10": "#2622FF",
       },
     },
   },

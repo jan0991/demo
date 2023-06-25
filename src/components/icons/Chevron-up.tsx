@@ -1,13 +1,13 @@
 import * as React from "react";
 
-const SvgComponent: React.FC<{ isMenuOpen: boolean }> = ({ isMenuOpen }) =>  (
+const SvgComponent: React.FC<{ isMenuOpen: boolean }> = ({ isMenuOpen }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={16}
     height={16}
     fill="none"
-    className={isMenuOpen ? 'flip' : ''}
-    style={{transform: 'translateY(2px)'}}
+    className={isMenuOpen ? "flip" : ""}
+    style={{ transform: "translateY(2px)" }}
   >
     <mask id="a" fill="#fff">
       <path d="m8 5 5 5-.7.7L8 6.4l-4.3 4.3L3 10l5-5Z" />
@@ -19,5 +19,5 @@ const SvgComponent: React.FC<{ isMenuOpen: boolean }> = ({ isMenuOpen }) =>  (
       mask="url(#a)"
     />
   </svg>
-)
-export default SvgComponent
+);
+export default SvgComponent;
